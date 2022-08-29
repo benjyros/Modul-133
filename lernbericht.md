@@ -1,13 +1,13 @@
 # Lern-Bericht
-✍️ ggf. Ihr Gruppenname und Ihre Gruppenmitglieder
+Benjamin Peterhans
 
 ## Einleitung
 
-✍️ Ein Satz, worum es in dem Projekt ging. Muss für einen externen Leser einfach zu verstehen sein.
+In diesem Kleinprojekt habe ich mir die Aufgabe gegeben, eine RGB-To-Hex Webseite zu programmieren.
 
 ## Was habe ich gelernt?
 
-✍️ Beschreiben Sie in einem Satz **eine** Sache, die Sie bei diesem Projekt gelernt haben und die Sie in diesem Lern-Bericht dokumentieren.
+Ich habe gelernt, wie man verschiedene Eingabearten anwenden und validieren kann.
 
 ## Beschreibung
 
