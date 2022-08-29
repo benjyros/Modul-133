@@ -56,6 +56,7 @@ Beim Angehen dieser Aufgabe verlief das meiste gut. Einige Probleme bin ich scho
 Hauptsächlich habe ich keinen Verbesserungsvorschlag zur Bearbeitung des Auftrags, aber zu zukünftigen neuen Projekten mit JSF. Da ich Probleme mit der IDE und dem Aufstarten der Website hatte, könnte ich dies in einem kleinen "Cheat-Sheet" alle Angehensweisen aufschreiben, sodass ich nicht immer im Internet nachschlagen muss. Mit dem könnte ich alle "Aufgaben setzen", die ich beim Erstellen eines Web-Projektes machen soll, sodass es keine Fehler ergeben.
 
 ## Links
-Range-Eingaben: https://stackoverflow.com/questions/30591996/validate-if-input-number-is-in-range-from-1-to-60
-Validierung von Texteingaben: https://stackoverflow.com/questions/19269507/accept-only-digits-for-hinputtext-value
-RGB zu Hex: https://stackoverflow.com/questions/3607858/convert-a-rgb-color-value-to-a-hexadecimal-string
+
+- Range-Eingaben: https://stackoverflow.com/questions/30591996/validate-if-input-number-is-in-range-from-1-to-60
+- Validierung von Texteingaben: https://stackoverflow.com/questions/19269507/accept-only-digits-for-hinputtext-value
+- RGB zu Hex: https://stackoverflow.com/questions/3607858/convert-a-rgb-color-value-to-a-hexadecimal-string
