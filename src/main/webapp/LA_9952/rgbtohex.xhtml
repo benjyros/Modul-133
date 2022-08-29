@@ -16,18 +16,21 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/XHtml.xhtml to edit t
             <h1>Background: Red #{LA_9952_ManagedBean.red} Green #{LA_9952_ManagedBean.green} Blue #{LA_9952_ManagedBean.blue}</h1>
             <h1>Hex: #{LA_9952_ManagedBean.getHex()}</h1>
             <h:form>
+                <!-- Eingabe des Wertes Rot mit einem normalen Textfeld. -->
                 <h:outputLabel for="red" value="Red: "/>
                 <h:inputText value="#{LA_9952_ManagedBean.red}" id="red" size="5" maxlength="3">
                     <f:validateLongRange minimum="0" maximum="255"/>
                 </h:inputText>
                 <br></br>
                 <br></br> 
+                <!-- Eingabe des Wertes Grün mit einer Liste. -->
                 <h:outputLabel for="green" value="Green: "/>
                 <h:selectOneListbox value="#{LA_9952_ManagedBean.green}" id="green" size="5">
                     <f:selectItems value="#{LA_9952_ManagedBean.numbers}" />  
                 </h:selectOneListbox>
                 <br></br>
                 <br></br>
+                <!-- Eingabe des Wertes Blau mit einem Dropdownmenu. -->
                 <h:outputLabel for="blue" value="Blue: "/>
                 <h:selectOneMenu value="#{LA_9952_ManagedBean.blue}" id="blue"> 
                     <f:selectItems value="#{LA_9952_ManagedBean.numbers}" />   
