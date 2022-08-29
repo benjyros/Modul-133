@@ -8,31 +8,32 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/XHtml.xhtml to edit t
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
-        <title>TODO supply a title</title>
+        <title>LA_9952</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <h:outputStylesheet library = "css" name = "LA_9952/la9952.css" /> 
     </h:head>
-    <h:body>
+    <h:body style="background-color: #{LA_9952_ManagedBean.getHex()}">
         <div>
-            <h:outputLabel for="red" value="Red:"/>
-            <h:inputText value="#{LA_9952_ManagedBean.red}" id="red"/>
-            <br></br>
-            <br></br> 
-            <h:outputLabel for="green" value="Green"/>
-            <h:selectOneListbox id="green">
-
-            </h:selectOneListbox>
-            <br></br>
-            <br></br>
-            <h:outputLabel for="blue" value="Blue"/>
-            <h:selectOneMenu value = "#{userData.data}" id="blue"> 
-                <f:selectItem itemValue = "1" itemLabel = "Item 1" /> 
-                <f:selectItem itemValue = "2" itemLabel = "Item 2" /> 
-                <f:selectItem itemValue = "3" itemLabel = "Item 3" /> 
-                <f:selectItem itemValue = "4" itemLabel = "Item 4" /> 
-                <f:selectItem itemValue = "5" itemLabel = "Item 5" />     
-            </h:selectOneMenu>  
-            <h:commandButton value = "Submit" action = "" /> 
+            <h1>Background: Red #{LA_9952_ManagedBean.red} Green #{LA_9952_ManagedBean.green} Blue #{LA_9952_ManagedBean.blue}</h1>
+            <h1>Hex: #{LA_9952_ManagedBean.getHex()}</h1>
+            <h:form>
+                <h:outputLabel for="red" value="Red: "/>
+                <h:inputText value="#{LA_9952_ManagedBean.red}" id="red" size="5" maxlength="3">
+                    <f:validateLongRange minimum="0" maximum="255"/>
+                </h:inputText>
+                <br></br>
+                <br></br> 
+                <h:outputLabel for="green" value="Green: "/>
+                <h:selectOneListbox value="#{LA_9952_ManagedBean.green}" id="green" size="5">
+                    <f:selectItems value="#{LA_9952_ManagedBean.numbers}" />  
+                </h:selectOneListbox>
+                <br></br>
+                <br></br>
+                <h:outputLabel for="blue" value="Blue: "/>
+                <h:selectOneMenu value="#{LA_9952_ManagedBean.blue}" id="blue"> 
+                    <f:selectItems value="#{LA_9952_ManagedBean.numbers}" />   
+                </h:selectOneMenu>  
+                <h:commandButton value="Submit" action = "#{LA_9952_ManagedBean.rgbToHex()}" /> 
+            </h:form>
         </div>
     </h:body>
 </html>

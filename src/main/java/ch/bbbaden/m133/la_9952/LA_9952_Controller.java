@@ -12,7 +12,7 @@ import javax.inject.Named;
  *
  * @author benny
  */
-@Named(value = "LA_9952_ManagedBean")
+@Named(value = "LA_9952_Controller")
 @SessionScoped
 public class LA_9952_Controller implements Serializable {
     public LA_9952_Controller() {
