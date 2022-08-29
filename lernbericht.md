@@ -11,9 +11,9 @@ Ich habe gelernt, wie man verschiedene Eingabearten anwenden und validieren kann
 
 ## Beschreibung
 
-### Codesnippet
-
 Auf dieser Webseite kann man verschiedene Werte von 0 bis 255 eingeben. Je nach Eingabe wird somit der Wert abgespeichert und beim Einreichen des "Formulars" der Hintergrund gewechselt. Für die Eingabe wird das RGB-System verwendet. Je nach Wert verändert somit die Farbe nach diesem System. Bei Einreichen dieser Werte wird das RGB-System in einen Hex-Wert konvertiert und somit zurückgegeben, sodass sich die Farbe des Hintergrundes ändert. Mit einer kurzen Demo können Sie die Anwendung ansehen.
+
+### Codesnippet
 
 ```xhtml
 <h:form>
