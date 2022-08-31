@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/XHtml.xhtml to edit this template
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <head>
+        <title>LA_9954</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div>
+            <h1>Erste Auswahl</h1>
+            <p>Willkommen. Wählen sie eine Hautfarbe aus!</p>
+            <h:form>
+                <h:commandLink action="#{LA_9954_Controller.getPost(0)}">
+                    <f:setPropertyActionListener target="#{LA_9954_ManagedBean.skin}" value="d"/>
+                    <h:graphicImage library="img" name="LA_9954/d.png"/>
+                </h:commandLink>
+                <h:commandLink action="#{LA_9954_Controller.getPost(0)}">
+                    <f:setPropertyActionListener target="#{LA_9954_ManagedBean.skin}" value="h"/>
+                    <h:graphicImage library="img" name="LA_9954/h.png"/>
+                </h:commandLink>
+            </h:form>
+        </div>
+    </body>
+</html>

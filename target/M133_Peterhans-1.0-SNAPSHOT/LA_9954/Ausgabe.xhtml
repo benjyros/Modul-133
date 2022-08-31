@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/XHtml.xhtml to edit this template
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <head>
+        <title>LA_9954</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div>
+            <h1>Ihr Pokemon-Charakter!</h1>
+            <h:form>
+                <h:outputLabel value="Deine Auswahl: #{LA_9954_ManagedBean.getChoice()}."/>
+                <br></br>
+                <h:graphicImage library="img" name="LA_9954/#{LA_9954_ManagedBean.hair}#{LA_9954_ManagedBean.eyes}#{LA_9954_ManagedBean.skin}.png"/>
+                <br></br>
+                <br></br>
+                <h:commandLink value="Home" action="#{LA_9954_Controller.getPost(3)}" />
+            </h:form>
+        </div>
+    </body>
+</html>
