@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/XHtml.xhtml to edit this template
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <head>
+        <title>LA_9960</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div>
+            <h1>Login</h1>
+            <h:form>
+                <h:outputLabel for="username" value="Username: "/>
+                <h:inputText id="username" value="#{LoginUserBean.username}" required="true" requiredMessage="Username is required"/>
+                <br></br>
+                <h:outputLabel for="pw" value="Password: "/>
+                <h:inputSecret id="pw" value="#{LoginUserBean.pw}" required="true" requiredMessage="Password is required"/>
+                <br></br> 
+                <br></br> 
+                <h:commandButton value="Login" action = "#{LoginUserBean.doLogin()}" /> 
+            </h:form>
+        </div>
+    </body>
+</html>
